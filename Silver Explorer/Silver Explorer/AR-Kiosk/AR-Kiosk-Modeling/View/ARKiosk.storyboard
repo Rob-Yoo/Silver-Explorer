@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController storyboardIdentifier="ARKioskViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ARKioskViewController" customModule="Silver_Explorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NKk-D1-5nM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEI-Xy-cAl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                             </arscnView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4e-Ud-dCy">
-                                <rect key="frame" x="30" y="60" width="100" height="50"/>
+                                <rect key="frame" x="30" y="34" width="100" height="50"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xHL-vH-Wq6">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,25 +53,25 @@
                                 <blurEffect style="systemThinMaterialDark"/>
                             </visualEffectView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-6K-LhZ">
-                                <rect key="frame" x="30" y="160" width="315" height="518"/>
+                                <rect key="frame" x="150" y="234" width="520" height="776"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="waJ-v5-pp5">
-                                    <rect key="frame" x="0.0" y="0.0" width="315" height="518"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="520" height="776"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-2J-t91">
-                                            <rect key="frame" x="0.0" y="0.0" width="315" height="518"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="520" height="776"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1H1-Uq-hRp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="172.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="520" height="258.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wkx-rF-jHk">
-                                                            <rect key="frame" x="0.0" y="0.0" width="315" height="172.66666666666666"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="520" height="258.5"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2X-dc-FGi">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="172.66666666666666"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="258.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe right" translatesAutoresizingMaskIntoConstraints="NO" id="na3-tW-LfZ">
-                                                                            <rect key="frame" x="38.666666666666671" y="38.000000000000007" width="80" height="96.666666666666686"/>
+                                                                            <rect key="frame" x="90" y="81" width="80" height="96.5"/>
                                                                         </imageView>
                                                                     </subviews>
                                                                     <constraints>
@@ -80,10 +80,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GM2-oS-Zej">
-                                                                    <rect key="frame" x="157.66666666666663" y="0.0" width="157.33333333333337" height="172.66666666666666"/>
+                                                                    <rect key="frame" x="260" y="0.0" width="260" height="258.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinch out" translatesAutoresizingMaskIntoConstraints="NO" id="IHV-Tr-FKD">
-                                                                            <rect key="frame" x="25.999999999999993" y="34.333333333333343" width="105.33333333333331" height="104"/>
+                                                                            <rect key="frame" x="77.5" y="77.5" width="105" height="104"/>
                                                                         </imageView>
                                                                     </subviews>
                                                                     <constraints>
@@ -102,10 +102,10 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-gh-UOd">
-                                                    <rect key="frame" x="0.0" y="172.66666666666669" width="315" height="172.66666666666669"/>
+                                                    <rect key="frame" x="0.0" y="258.5" width="520" height="259"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC7-Ut-7Rm">
-                                                            <rect key="frame" x="15.333333333333343" y="50.666666666666636" width="284.66666666666663" height="71.666666666666686"/>
+                                                            <rect key="frame" x="118" y="93.5" width="284.5" height="72"/>
                                                             <string key="text">"터치 제스처 탐험하기"에서
 배웠던 스와이프, 확대/축소 제스처를
 사용해서  탐험해보세요!</string>
@@ -120,10 +120,10 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uha-4t-sPS">
-                                                    <rect key="frame" x="0.0" y="345.33333333333331" width="315" height="172.66666666666669"/>
+                                                    <rect key="frame" x="0.0" y="517.5" width="520" height="258.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="터치하여 시작하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-ng-TYa">
-                                                            <rect key="frame" x="68.333333333333329" y="71.333333333333314" width="178.66666666666669" height="30"/>
+                                                            <rect key="frame" x="170.5" y="114" width="179" height="30"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -159,11 +159,11 @@
                             <constraint firstItem="U4e-Ud-dCy" firstAttribute="leading" secondItem="MX5-V0-7fk" secondAttribute="leading" constant="30" id="Cz5-dN-mug"/>
                             <constraint firstItem="U4e-Ud-dCy" firstAttribute="top" secondItem="MX5-V0-7fk" secondAttribute="top" constant="10" id="L6z-A9-AcD"/>
                             <constraint firstItem="hEI-Xy-cAl" firstAttribute="leading" secondItem="MX5-V0-7fk" secondAttribute="leading" id="LG0-ci-XEA"/>
-                            <constraint firstItem="q3F-6K-LhZ" firstAttribute="leading" secondItem="MX5-V0-7fk" secondAttribute="leading" constant="30" id="NLc-cD-kIZ"/>
-                            <constraint firstItem="MX5-V0-7fk" firstAttribute="trailing" secondItem="q3F-6K-LhZ" secondAttribute="trailing" constant="30" id="RBG-b5-qrh"/>
-                            <constraint firstItem="q3F-6K-LhZ" firstAttribute="top" secondItem="U4e-Ud-dCy" secondAttribute="bottom" constant="50" id="Se1-Lk-BVe"/>
+                            <constraint firstItem="q3F-6K-LhZ" firstAttribute="leading" secondItem="MX5-V0-7fk" secondAttribute="leading" constant="150" id="NLc-cD-kIZ"/>
+                            <constraint firstItem="MX5-V0-7fk" firstAttribute="trailing" secondItem="q3F-6K-LhZ" secondAttribute="trailing" constant="150" id="RBG-b5-qrh"/>
+                            <constraint firstItem="q3F-6K-LhZ" firstAttribute="top" secondItem="U4e-Ud-dCy" secondAttribute="bottom" constant="150" id="Se1-Lk-BVe"/>
                             <constraint firstItem="hEI-Xy-cAl" firstAttribute="top" secondItem="NKk-D1-5nM" secondAttribute="top" id="aY3-rI-83R"/>
-                            <constraint firstItem="MX5-V0-7fk" firstAttribute="bottom" secondItem="q3F-6K-LhZ" secondAttribute="bottom" constant="100" id="njX-ev-M4E"/>
+                            <constraint firstItem="MX5-V0-7fk" firstAttribute="bottom" secondItem="q3F-6K-LhZ" secondAttribute="bottom" constant="150" id="njX-ev-M4E"/>
                         </constraints>
                     </view>
                     <connections>
@@ -184,8 +184,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pinch out" width="105.33333587646484" height="104"/>
-        <image name="swipe right" width="80" height="96.666664123535156"/>
+        <image name="pinch out" width="105" height="104"/>
+        <image name="swipe right" width="80" height="96.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
