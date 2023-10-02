@@ -9,8 +9,7 @@
 import UIKit
 
 class MenuSelectionViewController : UIViewController, UITableViewDelegate,UICollectionViewDelegate,UITableViewDataSource {
-    
-    
+
     var cartItems : [Product] = []
     
     @IBOutlet weak var totalQuantityLabel: UILabel!
