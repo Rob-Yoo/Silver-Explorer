@@ -20,7 +20,6 @@ class ARCharacterSelectViewController: UIViewController, ARCharacterDelegate {
         self.navigationController?.popViewController(animated: true)
     }
     
-    
     @IBAction private func pushedArrButton(_ sender: UIButton) {
         selectedCharacter = .Arr
         moveToUIExploreVC(vc: self)
@@ -29,8 +28,7 @@ class ARCharacterSelectViewController: UIViewController, ARCharacterDelegate {
         selectedCharacter = .Finn
         moveToUIExploreVC(vc: self)
     }
-    
-    // MARK: - ARCharacterDelegae 필수 메서드
+
     func selectedARCharacter() -> ARCharacter? {
         switch selectedCharacter {
         case .Arr:

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContentDescriptionResource {
+struct ContentIntroductionModel {
     let contentTitle: [Content: String] = [
         .UIExplore: "터치 제스처 탐험하기",
         .ARKiosk: "키오스크 탐험하기",

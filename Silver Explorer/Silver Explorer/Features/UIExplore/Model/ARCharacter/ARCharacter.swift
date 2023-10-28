@@ -8,7 +8,6 @@
 import ARKit
 import SceneKit
 
-// MARK: - ARCharacter Class
 class ARCharacter {
     var sceneView: ARSCNView!
     var characterContainerNode: SCNNode

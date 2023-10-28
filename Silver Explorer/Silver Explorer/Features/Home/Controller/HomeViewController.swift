@@ -17,17 +17,17 @@ class HomeViewController: UIViewController, HomeDelegate {
 
     @IBAction func uiExploreBtnPressed(_ sender: UIButton) {
         selectedContent = .UIExplore
-        moveToContentDescriptionVC(homeVC: self)
+        moveToContentIntroductionVC(homeVC: self)
     }
 
     @IBAction func arKioskBtnPressed(_ sender: UIButton) {
         selectedContent = .ARKiosk
-        moveToContentDescriptionVC(homeVC: self)
+        moveToContentIntroductionVC(homeVC: self)
     }
 
     @IBAction func aiExplore(_ sender: UIButton) {
         selectedContent = .AIExplore
-        moveToContentDescriptionVC(homeVC: self)
+        moveToContentIntroductionVC(homeVC: self)
     }
 
     func content() -> Content {

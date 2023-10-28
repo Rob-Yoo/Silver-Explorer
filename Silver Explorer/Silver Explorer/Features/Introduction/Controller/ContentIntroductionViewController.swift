@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ContentDescriptionViewController: UIViewController {
+class ContentIntroductionViewController: UIViewController {
     
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     
     weak var homeDelegate: HomeDelegate?
-    private let resource: ContentDescriptionResource = ContentDescriptionResource()
+    private let model: ContentIntroductionModel = ContentIntroductionModel()
+    
     private var content: Content {
         guard let cnt = homeDelegate?.content(), cnt != .none else {
             moveBacktoHome(vc: self)
@@ -38,7 +39,7 @@ class ContentDescriptionViewController: UIViewController {
     }
     
     private func initialSettingForContentDescription() {
-        titleLabel.text = resource.contentTitle[content]!
-        descriptionLabel.text = resource.contentDescription[content]!
+        titleLabel.text = model.contentTitle[content]!
+        descriptionLabel.text = model.contentDescription[content]!
     }
 }
