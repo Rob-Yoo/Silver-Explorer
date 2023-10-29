@@ -22,11 +22,11 @@ class ARCharacterSelectViewController: UIViewController, ARCharacterDelegate {
     
     @IBAction private func pushedArrButton(_ sender: UIButton) {
         selectedCharacter = .Arr
-        moveToUIExploreVC(vc: self)
+        Navigator.moveToUIExploreVC(vc: self)
     }
     @IBAction private func pushedFinnButton(_ sender: UIButton) {
         selectedCharacter = .Finn
-        moveToUIExploreVC(vc: self)
+        Navigator.moveToUIExploreVC(vc: self)
     }
 
     func selectedARCharacter() -> ARCharacter? {

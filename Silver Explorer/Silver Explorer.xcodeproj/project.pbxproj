@@ -21,8 +21,8 @@
 		CC23C3AD2A76CB210024C12B /* PhoneMemberShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23C3AC2A76CB210024C12B /* PhoneMemberShipViewController.swift */; };
 		CC23C3AF2A76CB380024C12B /* BarcodMembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23C3AE2A76CB380024C12B /* BarcodMembershipViewController.swift */; };
 		CC291D6C2A77FD1700C363DF /* ProductOptionResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC291D6B2A77FD1700C363DF /* ProductOptionResource.swift */; };
-		CC291D6E2A77FEAF00C363DF /* PaymentSelectResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC291D6D2A77FEAF00C363DF /* PaymentSelectResource.swift */; };
-		CC291D702A77FFA800C363DF /* PaymentResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC291D6F2A77FFA800C363DF /* PaymentResource.swift */; };
+		CC291D6E2A77FEAF00C363DF /* PaymentSelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC291D6D2A77FEAF00C363DF /* PaymentSelectModel.swift */; };
+		CC291D702A77FFA800C363DF /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC291D6F2A77FFA800C363DF /* PaymentModel.swift */; };
 		CC2AA4E42AB2D8250080F717 /* KioskMainBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2AA4E32AB2D8250080F717 /* KioskMainBoard.storyboard */; };
 		CC2AA4E62AB2D8280080F717 /* KioskModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2AA4E52AB2D8280080F717 /* KioskModal.storyboard */; };
 		CC38F8A92A87697F008A9C22 /* AlertDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC38F8A82A87697F008A9C22 /* AlertDelegate.swift */; };
@@ -47,8 +47,9 @@
 		CC57AC182A710DD100E892FF /* Arr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC172A710DD100E892FF /* Arr.swift */; };
 		CC57AC1A2A710DDA00E892FF /* Finn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC192A710DDA00E892FF /* Finn.swift */; };
 		CC5BC9B12AED6CDE00DAA585 /* ProductOptionSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC9B02AED6CDE00DAA585 /* ProductOptionSelectViewController.swift */; };
+		CC5BC9B62AEEB0FB00DAA585 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC9B52AEEB0FB00DAA585 /* Path.swift */; };
 		CC64A4962A869D420092B147 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64A4952A869D420092B147 /* AlertViewController.swift */; };
-		CCA5E4712AEC3E8A007CDB8C /* GestureRecongizerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerCreator.swift */; };
+		CCA5E4712AEC3E8A007CDB8C /* GestureRecongizerForCharcater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerForCharcater.swift */; };
 		CCA5E4732AED5C7A007CDB8C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5E4722AED5C7A007CDB8C /* Character.swift */; };
 		CCA5E4752AED5CA7007CDB8C /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5E4742AED5CA7007CDB8C /* Stage.swift */; };
 		CCA5E4772AED5D0B007CDB8C /* Kiosk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5E4762AED5D0B007CDB8C /* Kiosk.swift */; };
@@ -61,7 +62,7 @@
 		CCCA56482AB2DAE5006D684B /* ContentIntroduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCA56472AB2DAE5006D684B /* ContentIntroduction.storyboard */; };
 		CCE801A02A89FD4100FE0994 /* ARKioskForBarcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE8019F2A89FD4100FE0994 /* ARKioskForBarcode.swift */; };
 		CCE801A22A89FD8600FE0994 /* ARKioskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A12A89FD8600FE0994 /* ARKioskModel.swift */; };
-		CCE801A42A8A05E000FE0994 /* ARKioskExplore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A32A8A05E000FE0994 /* ARKioskExplore.swift */; };
+		CCE801A42A8A05E000FE0994 /* GestureRecognizerForKiosk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A32A8A05E000FE0994 /* GestureRecognizerForKiosk.swift */; };
 		CCE801A82A8A0AA800FE0994 /* ARKioskForCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */; };
 		CCFE1C9B2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */; };
 		CCFE1C9D2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */; };
@@ -94,8 +95,8 @@
 		CC23C3AC2A76CB210024C12B /* PhoneMemberShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneMemberShipViewController.swift; sourceTree = "<group>"; };
 		CC23C3AE2A76CB380024C12B /* BarcodMembershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodMembershipViewController.swift; sourceTree = "<group>"; };
 		CC291D6B2A77FD1700C363DF /* ProductOptionResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOptionResource.swift; sourceTree = "<group>"; };
-		CC291D6D2A77FEAF00C363DF /* PaymentSelectResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectResource.swift; sourceTree = "<group>"; };
-		CC291D6F2A77FFA800C363DF /* PaymentResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResource.swift; sourceTree = "<group>"; };
+		CC291D6D2A77FEAF00C363DF /* PaymentSelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectModel.swift; sourceTree = "<group>"; };
+		CC291D6F2A77FFA800C363DF /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		CC2AA4E32AB2D8250080F717 /* KioskMainBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KioskMainBoard.storyboard; sourceTree = "<group>"; };
 		CC2AA4E52AB2D8280080F717 /* KioskModal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KioskModal.storyboard; sourceTree = "<group>"; };
 		CC38F8A82A87697F008A9C22 /* AlertDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDelegate.swift; sourceTree = "<group>"; };
@@ -120,8 +121,9 @@
 		CC57AC172A710DD100E892FF /* Arr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arr.swift; sourceTree = "<group>"; };
 		CC57AC192A710DDA00E892FF /* Finn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finn.swift; sourceTree = "<group>"; };
 		CC5BC9B02AED6CDE00DAA585 /* ProductOptionSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOptionSelectViewController.swift; sourceTree = "<group>"; };
+		CC5BC9B52AEEB0FB00DAA585 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CC64A4952A869D420092B147 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
-		CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecongizerCreator.swift; sourceTree = "<group>"; };
+		CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerForCharcater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecongizerForCharcater.swift; sourceTree = "<group>"; };
 		CCA5E4722AED5C7A007CDB8C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CCA5E4742AED5CA7007CDB8C /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		CCA5E4762AED5D0B007CDB8C /* Kiosk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kiosk.swift; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 		CCCA56472AB2DAE5006D684B /* ContentIntroduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContentIntroduction.storyboard; sourceTree = "<group>"; };
 		CCE8019F2A89FD4100FE0994 /* ARKioskForBarcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskForBarcode.swift; sourceTree = "<group>"; };
 		CCE801A12A89FD8600FE0994 /* ARKioskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskModel.swift; sourceTree = "<group>"; };
-		CCE801A32A8A05E000FE0994 /* ARKioskExplore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskExplore.swift; sourceTree = "<group>"; };
+		CCE801A32A8A05E000FE0994 /* GestureRecognizerForKiosk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerForKiosk.swift; sourceTree = "<group>"; };
 		CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskForCreditCard.swift; sourceTree = "<group>"; };
 		CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPaymentTypeDelegate.swift; sourceTree = "<group>"; };
 		CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskMainBoardDelegate.swift; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD9F67D72A824D5B0056696E /* AI-Explore */ = {
+		AD9F67D72A824D5B0056696E /* AIExplore */ = {
 			isa = PBXGroup;
 			children = (
 				AD9F67DB2A824E220056696E /* Scanner */,
@@ -173,7 +175,7 @@
 				AD9F67D92A824E130056696E /* Utils */,
 				AD9F67D82A824E010056696E /* Delegates */,
 			);
-			path = "AI-Explore";
+			path = AIExplore;
 			sourceTree = "<group>";
 		};
 		AD9F67D82A824E010056696E /* Delegates */ = {
@@ -257,14 +259,9 @@
 		CC43524A2A7259D0000EDAB0 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				CC43524B2A725A06000EDAB0 /* ARCharacterSelectDelegate.swift */,
-				CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */,
-				CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */,
-				FF502C2E2A8007D600F1CBB2 /* MenuSelectionTableViewCellDelegate.swift */,
-				CC47C8C42A83768200B257AF /* HomeDelegate.swift */,
-				CC38F8A82A87697F008A9C22 /* AlertDelegate.swift */,
-				CC38F8AD2A877570008A9C22 /* PhoneNumberMembershipDelegate.swift */,
-				CC4AA4A72A88F228005C3201 /* ARKioskDelegate.swift */,
+				CC5BC9B42AED766000DAA585 /* Home */,
+				CC5BC9B32AED764000DAA585 /* ARKiosk */,
+				CC5BC9B22AED762100DAA585 /* UIExplore */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -272,6 +269,7 @@
 		CC43524D2A727287000EDAB0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CC43524A2A7259D0000EDAB0 /* Delegate */,
 				CC490F752AED6B3000063816 /* Extension */,
 				CCA5E47B2AED6872007CDB8C /* Navigation */,
 				CC43524E2A727296000EDAB0 /* CustomizeView.swift */,
@@ -279,14 +277,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		CC47C8BA2A836F5D00B257AF /* Introduction */ = {
+		CC47C8BA2A836F5D00B257AF /* Intro */ = {
 			isa = PBXGroup;
 			children = (
 				CC47C8BD2A836F9900B257AF /* Model */,
 				CC47C8BC2A836F9300B257AF /* View */,
 				CC47C8BB2A836F8B00B257AF /* Controller */,
 			);
-			path = Introduction;
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		CC47C8BB2A836F8B00B257AF /* Controller */ = {
@@ -335,7 +333,6 @@
 			children = (
 				CCA5E47C2AED6A6A007CDB8C /* Features */,
 				CC43524D2A727287000EDAB0 /* Utils */,
-				CC43524A2A7259D0000EDAB0 /* Delegate */,
 				CC57ABEC2A710A4200E892FF /* AppDelegate.swift */,
 				CC57ABEE2A710A4200E892FF /* art.scnassets */,
 				CC57ABF72A710A4300E892FF /* LaunchScreen.storyboard */,
@@ -402,7 +399,7 @@
 			children = (
 				CC57AC142A710DB600E892FF /* ARCharacter */,
 				CC57AC122A710D9C00E892FF /* UIExploreModel.swift */,
-				CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerCreator.swift */,
+				CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerForCharcater.swift */,
 				CCA5E4742AED5CA7007CDB8C /* Stage.swift */,
 			);
 			path = Model;
@@ -417,6 +414,35 @@
 				CCA5E4722AED5C7A007CDB8C /* Character.swift */,
 			);
 			path = ARCharacter;
+			sourceTree = "<group>";
+		};
+		CC5BC9B22AED762100DAA585 /* UIExplore */ = {
+			isa = PBXGroup;
+			children = (
+				CC43524B2A725A06000EDAB0 /* ARCharacterSelectDelegate.swift */,
+			);
+			path = UIExplore;
+			sourceTree = "<group>";
+		};
+		CC5BC9B32AED764000DAA585 /* ARKiosk */ = {
+			isa = PBXGroup;
+			children = (
+				CC38F8A82A87697F008A9C22 /* AlertDelegate.swift */,
+				CC38F8AD2A877570008A9C22 /* PhoneNumberMembershipDelegate.swift */,
+				CC4AA4A72A88F228005C3201 /* ARKioskDelegate.swift */,
+				CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */,
+				CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */,
+				FF502C2E2A8007D600F1CBB2 /* MenuSelectionTableViewCellDelegate.swift */,
+			);
+			path = ARKiosk;
+			sourceTree = "<group>";
+		};
+		CC5BC9B42AED766000DAA585 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CC47C8C42A83768200B257AF /* HomeDelegate.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		CC9846582A88FB6300E212AF /* KioskModal */ = {
@@ -455,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4352502A72841E000EDAB0 /* Navigator.swift */,
+				CC5BC9B52AEEB0FB00DAA585 /* Path.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -463,10 +490,10 @@
 			isa = PBXGroup;
 			children = (
 				CC57ABFF2A710ABF00E892FF /* Home */,
-				CC47C8BA2A836F5D00B257AF /* Introduction */,
+				CC47C8BA2A836F5D00B257AF /* Intro */,
 				CC57AC0A2A710C4E00E892FF /* UIExplore */,
-				FF185B322A739BF9003E766E /* AR-Kiosk */,
-				AD9F67D72A824D5B0056696E /* AI-Explore */,
+				FF185B322A739BF9003E766E /* ARKiosk */,
+				AD9F67D72A824D5B0056696E /* AIExplore */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -474,6 +501,7 @@
 		CCE801A52A8A078600FE0994 /* ARKioskModel */ = {
 			isa = PBXGroup;
 			children = (
+				CCE801A32A8A05E000FE0994 /* GestureRecognizerForKiosk.swift */,
 				CCE8019F2A89FD4100FE0994 /* ARKioskForBarcode.swift */,
 				CCE801A12A89FD8600FE0994 /* ARKioskModel.swift */,
 				CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */,
@@ -481,13 +509,13 @@
 			path = ARKioskModel;
 			sourceTree = "<group>";
 		};
-		FF185B322A739BF9003E766E /* AR-Kiosk */ = {
+		FF185B322A739BF9003E766E /* ARKiosk */ = {
 			isa = PBXGroup;
 			children = (
 				FF185B3B2A739CAA003E766E /* KioskScreen */,
 				FFE42A5C2A73BB7700752CD7 /* AR-Kiosk-Modeling */,
 			);
-			path = "AR-Kiosk";
+			path = ARKiosk;
 			sourceTree = "<group>";
 		};
 		FF185B332A739C0B003E766E /* Model */ = {
@@ -496,7 +524,6 @@
 				CCE801A52A8A078600FE0994 /* ARKioskModel */,
 				FF185B4B2A73B4AC003E766E /* summerFestival.png */,
 				FF185B4D2A73B4B0003E766E /* camera.png */,
-				CCE801A32A8A05E000FE0994 /* ARKioskExplore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -543,8 +570,8 @@
 			children = (
 				FFE42A5D2A73BBEC00752CD7 /* MenuResource.swift */,
 				CC291D6B2A77FD1700C363DF /* ProductOptionResource.swift */,
-				CC291D6D2A77FEAF00C363DF /* PaymentSelectResource.swift */,
-				CC291D6F2A77FFA800C363DF /* PaymentResource.swift */,
+				CC291D6D2A77FEAF00C363DF /* PaymentSelectModel.swift */,
+				CC291D6F2A77FFA800C363DF /* PaymentModel.swift */,
 				CCA5E4762AED5D0B007CDB8C /* Kiosk.swift */,
 			);
 			path = Model;
@@ -669,8 +696,8 @@
 				CC57AC0F2A710D2A00E892FF /* UIExploreViewController.swift in Sources */,
 				AD9F67F32A824F540056696E /* NewsPaperTextRecognizer.swift in Sources */,
 				CCB7B4372A7782FA00EE46AA /* PaymentFinishViewController.swift in Sources */,
-				CCE801A42A8A05E000FE0994 /* ARKioskExplore.swift in Sources */,
-				CC291D6E2A77FEAF00C363DF /* PaymentSelectResource.swift in Sources */,
+				CCE801A42A8A05E000FE0994 /* GestureRecognizerForKiosk.swift in Sources */,
+				CC291D6E2A77FEAF00C363DF /* PaymentSelectModel.swift in Sources */,
 				CCE801A22A89FD8600FE0994 /* ARKioskModel.swift in Sources */,
 				CCFE1C9B2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift in Sources */,
 				CCFE1C9D2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift in Sources */,
@@ -685,7 +712,7 @@
 				AD9F67F12A824F540056696E /* TextRecognitionModel.swift in Sources */,
 				CCA5E4752AED5CA7007CDB8C /* Stage.swift in Sources */,
 				CCA5E4732AED5C7A007CDB8C /* Character.swift in Sources */,
-				CC291D702A77FFA800C363DF /* PaymentResource.swift in Sources */,
+				CC291D702A77FFA800C363DF /* PaymentModel.swift in Sources */,
 				CC38F8A92A87697F008A9C22 /* AlertDelegate.swift in Sources */,
 				CC47C8C32A836FE700B257AF /* ContentIntroductionViewController.swift in Sources */,
 				CC291D6C2A77FD1700C363DF /* ProductOptionResource.swift in Sources */,
@@ -694,7 +721,7 @@
 				FF185B462A73ADA7003E766E /* ARKioskViewController.swift in Sources */,
 				CCB7B4352A777EA900EE46AA /* PaymentViewController.swift in Sources */,
 				CC5BC9B12AED6CDE00DAA585 /* ProductOptionSelectViewController.swift in Sources */,
-				CCA5E4712AEC3E8A007CDB8C /* GestureRecongizerCreator.swift in Sources */,
+				CCA5E4712AEC3E8A007CDB8C /* GestureRecongizerForCharcater.swift in Sources */,
 				AD9F67E52A824F200056696E /* ScannerViewController.swift in Sources */,
 				CC4AA4A82A88F228005C3201 /* ARKioskDelegate.swift in Sources */,
 				FF464C7A2A7C2B1F00B02D74 /* MenuSelectionTableViewCell.swift in Sources */,
@@ -704,6 +731,7 @@
 				CC57AC1A2A710DDA00E892FF /* Finn.swift in Sources */,
 				CC23C3AB2A76CAC10024C12B /* MembershipViewController.swift in Sources */,
 				CC23C3AF2A76CB380024C12B /* BarcodMembershipViewController.swift in Sources */,
+				CC5BC9B62AEEB0FB00DAA585 /* Path.swift in Sources */,
 				CCA5E47A2AED5D3D007CDB8C /* Content.swift in Sources */,
 				CC43524F2A727296000EDAB0 /* CustomizeView.swift in Sources */,
 				CC57AC062A710AFA00E892FF /* HomeViewController.swift in Sources */,

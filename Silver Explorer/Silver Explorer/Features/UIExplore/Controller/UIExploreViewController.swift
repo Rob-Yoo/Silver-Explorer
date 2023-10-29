@@ -163,7 +163,7 @@ extension UIExploreViewController {
             gestureRecognizers.removeAll()
         }
         
-        gestureRecognizers = GestureRecongizerCreator.createGestureRecognizer(target: arCharacter, stage)
+        gestureRecognizers = GestureRecongizerForCharcater.createGestureRecognizer(target: arCharacter, stage)
         gestureRecognizers.forEach { touchGestureStageView.addGestureRecognizer($0) }
     }
     

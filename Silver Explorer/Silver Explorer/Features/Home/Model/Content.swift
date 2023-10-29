@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Content: String {
+enum Content {
     case UIExplore, ARKiosk, AIExplore, none
 }
