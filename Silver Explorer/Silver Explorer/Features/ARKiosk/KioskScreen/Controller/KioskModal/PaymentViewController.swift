@@ -15,7 +15,7 @@ class PaymentViewController: UIViewController, ARKioskDelegate, AlertDelegate {
     @IBOutlet private weak var paymentImageView: UIImageView!
     @IBOutlet private weak var descriptionLabel: UILabel!
 
-    weak var menuSelectionDelegate : MenuSelectionDelegate?
+    weak var modalDelegate : ModalDelegate?
     var paymentType: PaymentType = .none
 
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ extension PaymentViewController {
     
     @IBAction func previousBtnPressed(_ sender: UIButton) {
         self.dismiss(animated: false) {
-            self.menuSelectionDelegate?.moveToPaymentSelectVC()
+            self.modalDelegate?.moveToPaymentSelectVC()
         }
     }
     
@@ -67,7 +67,7 @@ extension PaymentViewController {
     
     func didAlertDismiss() {
         self.dismiss(animated: false) {
-            self.menuSelectionDelegate?.moveToPaymentFinishVC()
+            self.modalDelegate?.moveToPaymentFinishVC()
         }
     }
     

@@ -12,7 +12,7 @@ class PaymentFinishViewController: UIViewController {
     @IBOutlet private weak var countDownLabel: UILabel!
     @IBOutlet private weak var waitingNumberLabel: UILabel!
     
-    weak var menuSelectionDelegate: MenuSelectionDelegate?
+    weak var modalDelegate: ModalDelegate?
     private var timer: Timer?
     private var count = 5 {
         didSet {
@@ -42,7 +42,7 @@ class PaymentFinishViewController: UIViewController {
         } else {
             timer?.invalidate()
             self.dismiss(animated: false) {
-                self.menuSelectionDelegate?.backToMainScreen()                
+                self.modalDelegate?.backToMainScreen()                
             }
         }
     }
