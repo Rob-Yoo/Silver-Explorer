@@ -1,5 +1,5 @@
 //
-//  UIExploreResource.swift
+//  TouchGestureExploreModel.swift
 //  Silver Explorer
 //
 //  Created by Jinyoung Yoo on 2023/07/26.
@@ -8,7 +8,7 @@
 import ARKit
 import SceneKit
 
-struct UIExploreModel {
+struct TouchGestureExploreModel {
     static let stageTitles: [String] = [
             "탭하기 - 짧게", "탭하기 - 길게", "스와이프하기", "드래그하기", "확대하기/축소하기", "회전시키기"
             ]

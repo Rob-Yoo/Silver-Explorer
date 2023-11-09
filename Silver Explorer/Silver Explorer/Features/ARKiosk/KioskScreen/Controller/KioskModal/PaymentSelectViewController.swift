@@ -13,7 +13,7 @@ class PaymentSelectViewController: UIViewController {
     @IBOutlet private weak var creditCardImageView: UIImageView!
     @IBOutlet private weak var barcodeImageView: UIImageView!
 
-    weak var kioskMainBoardDelegate: KioskMainBoardDelegate?
+    weak var menuSelectionDelegate: MenuSelectionDelegate?
     private var paymentMethod: PaymentType = .creditCard
     
     private var creditCardImages: [UIImage] {
@@ -24,7 +24,7 @@ class PaymentSelectViewController: UIViewController {
     }
 
     private var totalPrice: Int {
-        guard let price = kioskMainBoardDelegate?.totalPriceForPayment() else {
+        guard let price = menuSelectionDelegate?.totalPriceForPayment() else {
             self.dismiss(animated: false)
             return 0
         }
@@ -62,7 +62,7 @@ extension PaymentSelectViewController {
     
     @IBAction private func paymentBtnPressed(_ sender: UIButton) {
         self.dismiss(animated: false) {
-            self.kioskMainBoardDelegate?.moveToPaymentVC(paymentType: self.paymentMethod)
+            self.menuSelectionDelegate?.moveToPaymentVC(paymentType: self.paymentMethod)
         }
         
     }

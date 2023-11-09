@@ -8,7 +8,7 @@
 import ARKit
 import SceneKit
 
-class ARCharacter {
+class ARCharacter: ActionProtocol {
     var sceneView: ARSCNView!
     var characterContainerNode: SCNNode
     var characterNode: SCNNode
@@ -22,27 +22,32 @@ class ARCharacter {
         self.eulerAngleOfCharacterNode = characterNode.eulerAngles
         self.initialScale = CGFloat(characterNode.scale.x)
     }
+    
+    // MARK: - Final Methods
 
     final func setSceneView(sceneView: ARSCNView) { self.sceneView = sceneView }
-
-    @objc func jump() {}
-    @objc func highJump(_ gesture: UILongPressGestureRecognizer) {}
-    @objc func rightAngleRotate(_ gesture: UISwipeGestureRecognizer) {}
-    @objc func eulerAngleRotate(_ gesture: UIPanGestureRecognizer) {}
-    @objc func scaleUpAndDown(_ gesture: UIPinchGestureRecognizer) {}
-    @objc func zAxisRotate(_ gesture: UIRotationGestureRecognizer) {}
     
-    func resetARCharacterAngle(targetNode: SCNNode) {
+    final func resetARCharacterAngle(targetNode: SCNNode) {
         let resetAngleAction = SCNAction.rotateTo(x: CGFloat(eulerAngleOfCharacterNode.x), y: CGFloat(eulerAngleOfCharacterNode.y), z: CGFloat(eulerAngleOfCharacterNode.z), duration: 0.2)
         
         targetNode.runAction(resetAngleAction)
     }
     
-    func resetARCharacterScale() {
+    final func resetARCharacterScale() {
         let resetScaleAction = SCNAction.customAction(duration: 0.2) { (_, _) in
             self.characterNode.scale = SCNVector3(self.initialScale, self.initialScale, self.initialScale)
         }
         
         characterNode.runAction(resetScaleAction)
     }
+    
+    
+    // MARK: - ActionProtocol Methods
+
+    @objc func jump() { fatalError("ARCharacter 클래스의 Jump 함수는 무조건 오버라이드!!") }
+    @objc func highJump(_ gesture: UILongPressGestureRecognizer) { fatalError("ARCharacter 클래스의 highJump 함수는 무조건 오버라이드!!") }
+    @objc func rightAngleRotate(_ gesture: UISwipeGestureRecognizer) { fatalError("ARCharacter 클래스의 rightAngleRotate 함수는 무조건 오버라이드!!") }
+    @objc func eulerAngleRotate(_ gesture: UIPanGestureRecognizer) { fatalError("ARCharacter 클래스의 eulerAngleRotate 함수는 무조건 오버라이드!!")}
+    @objc func scaleUpAndDown(_ gesture: UIPinchGestureRecognizer) { fatalError("ARCharacter 클래스의 scaleUpAndDown 함수는 무조건 오버라이드!!") }
+    @objc func zAxisRotate(_ gesture: UIRotationGestureRecognizer) { fatalError("ARCharacter 클래스의 zAxisRotate 함수는 무조건 오버라이드!!") }
 }

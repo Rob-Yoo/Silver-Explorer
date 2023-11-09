@@ -21,7 +21,6 @@ class ARKioskViewController: UIViewController, ARSCNViewDelegate {
     private var arKiosk: ARKioskModel!
     var paymentType : PaymentType?
     
-    weak var kioskMainBoardDelegate : KioskMainBoardDelegate?
     weak var arKioskDelegate: ARKioskDelegate?
     
 
