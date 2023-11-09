@@ -57,7 +57,7 @@ class MenuSelectionViewController : UIViewController, UITableViewDelegate,UIColl
         if !cartItems.isEmpty{
             let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "MembershipViewController") as! MembershipViewController
-            vc.menuSelectionDelegate = self
+            vc.modalDelegate = self
             vc.appear(sender: self)
         }
     }
@@ -148,13 +148,13 @@ class MenuSelectionViewController : UIViewController, UITableViewDelegate,UIColl
     
 }
 
-extension MenuSelectionViewController : MenuSelectionDelegate {
+extension MenuSelectionViewController : ModalDelegate {
 
     func moveToPaymentFinishVC()
     {
         let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PaymentFinishViewController.self)) as! PaymentFinishViewController
-        vc.menuSelectionDelegate = self
+        vc.modalDelegate = self
         vc.appear(sender: self)
         
     }
@@ -162,7 +162,7 @@ extension MenuSelectionViewController : MenuSelectionDelegate {
         let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PaymentViewController.self)) as! PaymentViewController
         vc.paymentType = paymentType
-        vc.menuSelectionDelegate = self
+        vc.modalDelegate = self
         vc.appear(sender: self)
     }
 
@@ -184,7 +184,7 @@ extension MenuSelectionViewController : MenuSelectionDelegate {
     func moveToPaymentSelectVC() {
         let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PaymentSelectViewController.self)) as! PaymentSelectViewController
-        vc.menuSelectionDelegate = self
+        vc.modalDelegate = self
         vc.appear(sender: self)
     }
     

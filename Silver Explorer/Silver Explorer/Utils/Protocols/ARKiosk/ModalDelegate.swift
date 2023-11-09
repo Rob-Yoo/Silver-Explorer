@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MenuSelectionDelegate: AnyObject {
+protocol ModalDelegate: AnyObject {
     // MenuSelectionViewController -> ProductOptionSelectViewController
     func productForSelectingOption() -> Product
     
