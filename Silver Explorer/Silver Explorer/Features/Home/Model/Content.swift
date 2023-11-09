@@ -8,5 +8,5 @@
 import Foundation
 
 enum Content {
-    case UIExplore, ARKiosk, AIExplore, none
+    case TouchGestureExplore, ARKiosk, AIExplore, none
 }

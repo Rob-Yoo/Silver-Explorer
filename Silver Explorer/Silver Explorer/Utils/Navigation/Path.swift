@@ -10,7 +10,7 @@ import Foundation
 enum Path: String {
     case ContentIntroduction
 
-    case UIExplore, KioskMainBoard, KioskModal, ARKiosk
+    case TouchGestureExplore, KioskMainBoard, KioskModal, ARKiosk
     
     case Scanner, Reader
 }

@@ -41,8 +41,8 @@
 		CC57ABEF2A710A4200E892FF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CC57ABEE2A710A4200E892FF /* art.scnassets */; };
 		CC57ABF92A710A4300E892FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC57ABF72A710A4300E892FF /* LaunchScreen.storyboard */; };
 		CC57AC062A710AFA00E892FF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC052A710AFA00E892FF /* HomeViewController.swift */; };
-		CC57AC0F2A710D2A00E892FF /* UIExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC0E2A710D2A00E892FF /* UIExploreViewController.swift */; };
-		CC57AC132A710D9C00E892FF /* UIExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC122A710D9C00E892FF /* UIExploreModel.swift */; };
+		CC57AC0F2A710D2A00E892FF /* TouchGestureExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC0E2A710D2A00E892FF /* TouchGestureExploreViewController.swift */; };
+		CC57AC132A710D9C00E892FF /* TouchGestureExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC122A710D9C00E892FF /* TouchGestureExploreModel.swift */; };
 		CC57AC162A710DC900E892FF /* ARCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC152A710DC900E892FF /* ARCharacter.swift */; };
 		CC57AC182A710DD100E892FF /* Arr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC172A710DD100E892FF /* Arr.swift */; };
 		CC57AC1A2A710DDA00E892FF /* Finn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57AC192A710DDA00E892FF /* Finn.swift */; };
@@ -57,15 +57,16 @@
 		CCB04B302A7A31060035483C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB04B2F2A7A31060035483C /* UIColor+Extension.swift */; };
 		CCB7B4352A777EA900EE46AA /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4342A777EA900EE46AA /* PaymentViewController.swift */; };
 		CCB7B4372A7782FA00EE46AA /* PaymentFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4362A7782FA00EE46AA /* PaymentFinishViewController.swift */; };
-		CCCA56442AB2D964006D684B /* UIExplore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCA56432AB2D964006D684B /* UIExplore.storyboard */; };
+		CCCA56442AB2D964006D684B /* TouchGestureExplore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCA56432AB2D964006D684B /* TouchGestureExplore.storyboard */; };
 		CCCA56462AB2DAD5006D684B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCA56452AB2DAD5006D684B /* Home.storyboard */; };
 		CCCA56482AB2DAE5006D684B /* ContentIntroduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCA56472AB2DAE5006D684B /* ContentIntroduction.storyboard */; };
 		CCE801A02A89FD4100FE0994 /* ARKioskForBarcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE8019F2A89FD4100FE0994 /* ARKioskForBarcode.swift */; };
 		CCE801A22A89FD8600FE0994 /* ARKioskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A12A89FD8600FE0994 /* ARKioskModel.swift */; };
 		CCE801A42A8A05E000FE0994 /* GestureRecognizerForKiosk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A32A8A05E000FE0994 /* GestureRecognizerForKiosk.swift */; };
 		CCE801A82A8A0AA800FE0994 /* ARKioskForCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */; };
+		CCF1D2852AFC6D6A0096A989 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */; };
 		CCFE1C9B2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */; };
-		CCFE1C9D2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */; };
+		CCFE1C9D2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9C2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift */; };
 		FF185B442A73AD7B003E766E /* ARKiosk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF185B432A73AD7B003E766E /* ARKiosk.storyboard */; };
 		FF185B462A73ADA7003E766E /* ARKioskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF185B452A73ADA7003E766E /* ARKioskViewController.swift */; };
 		FF185B4C2A73B4AC003E766E /* summerFestival.png in Resources */ = {isa = PBXBuildFile; fileRef = FF185B4B2A73B4AC003E766E /* summerFestival.png */; };
@@ -115,8 +116,8 @@
 		CC57ABEE2A710A4200E892FF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		CC57ABF82A710A4300E892FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC57AC052A710AFA00E892FF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CC57AC0E2A710D2A00E892FF /* UIExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExploreViewController.swift; sourceTree = "<group>"; };
-		CC57AC122A710D9C00E892FF /* UIExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExploreModel.swift; sourceTree = "<group>"; };
+		CC57AC0E2A710D2A00E892FF /* TouchGestureExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchGestureExploreViewController.swift; sourceTree = "<group>"; };
+		CC57AC122A710D9C00E892FF /* TouchGestureExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchGestureExploreModel.swift; sourceTree = "<group>"; };
 		CC57AC152A710DC900E892FF /* ARCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCharacter.swift; sourceTree = "<group>"; };
 		CC57AC172A710DD100E892FF /* Arr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arr.swift; sourceTree = "<group>"; };
 		CC57AC192A710DDA00E892FF /* Finn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finn.swift; sourceTree = "<group>"; };
@@ -132,15 +133,16 @@
 		CCB04B2F2A7A31060035483C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CCB7B4342A777EA900EE46AA /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		CCB7B4362A7782FA00EE46AA /* PaymentFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFinishViewController.swift; sourceTree = "<group>"; };
-		CCCA56432AB2D964006D684B /* UIExplore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIExplore.storyboard; sourceTree = "<group>"; };
+		CCCA56432AB2D964006D684B /* TouchGestureExplore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TouchGestureExplore.storyboard; sourceTree = "<group>"; };
 		CCCA56452AB2DAD5006D684B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CCCA56472AB2DAE5006D684B /* ContentIntroduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContentIntroduction.storyboard; sourceTree = "<group>"; };
 		CCE8019F2A89FD4100FE0994 /* ARKioskForBarcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskForBarcode.swift; sourceTree = "<group>"; };
 		CCE801A12A89FD8600FE0994 /* ARKioskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskModel.swift; sourceTree = "<group>"; };
 		CCE801A32A8A05E000FE0994 /* GestureRecognizerForKiosk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerForKiosk.swift; sourceTree = "<group>"; };
 		CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskForCreditCard.swift; sourceTree = "<group>"; };
+		CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
 		CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPaymentTypeDelegate.swift; sourceTree = "<group>"; };
-		CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskMainBoardDelegate.swift; sourceTree = "<group>"; };
+		CCFE1C9C2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectionDelegate.swift; sourceTree = "<group>"; };
 		CCFEDDB32A8BF5A200DDA460 /* Silver Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Silver Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF185B432A73AD7B003E766E /* ARKiosk.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARKiosk.storyboard; sourceTree = "<group>"; };
 		FF185B452A73ADA7003E766E /* ARKioskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskViewController.swift; sourceTree = "<group>"; };
@@ -261,7 +263,7 @@
 			children = (
 				CC5BC9B42AED766000DAA585 /* Home */,
 				CC5BC9B32AED764000DAA585 /* ARKiosk */,
-				CC5BC9B22AED762100DAA585 /* UIExplore */,
+				CC5BC9B22AED762100DAA585 /* TouchGestureExploreExplore */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -367,20 +369,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CC57AC0A2A710C4E00E892FF /* UIExplore */ = {
+		CC57AC0A2A710C4E00E892FF /* TouchGestureExplore */ = {
 			isa = PBXGroup;
 			children = (
 				CC57AC0D2A710C7F00E892FF /* Model */,
 				CC57AC0C2A710C7500E892FF /* View */,
 				CC57AC0B2A710C6B00E892FF /* Controller */,
 			);
-			path = UIExplore;
+			path = TouchGestureExplore;
 			sourceTree = "<group>";
 		};
 		CC57AC0B2A710C6B00E892FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CC57AC0E2A710D2A00E892FF /* UIExploreViewController.swift */,
+				CC57AC0E2A710D2A00E892FF /* TouchGestureExploreViewController.swift */,
 				CC4352462A72506C000EDAB0 /* ARCharacterSelectViewController.swift */,
 			);
 			path = Controller;
@@ -389,7 +391,7 @@
 		CC57AC0C2A710C7500E892FF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CCCA56432AB2D964006D684B /* UIExplore.storyboard */,
+				CCCA56432AB2D964006D684B /* TouchGestureExplore.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -398,7 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				CC57AC142A710DB600E892FF /* ARCharacter */,
-				CC57AC122A710D9C00E892FF /* UIExploreModel.swift */,
+				CC57AC122A710D9C00E892FF /* TouchGestureExploreModel.swift */,
 				CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerForCharcater.swift */,
 				CCA5E4742AED5CA7007CDB8C /* Stage.swift */,
 			);
@@ -408,6 +410,7 @@
 		CC57AC142A710DB600E892FF /* ARCharacter */ = {
 			isa = PBXGroup;
 			children = (
+				CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */,
 				CC57AC152A710DC900E892FF /* ARCharacter.swift */,
 				CC57AC172A710DD100E892FF /* Arr.swift */,
 				CC57AC192A710DDA00E892FF /* Finn.swift */,
@@ -416,12 +419,12 @@
 			path = ARCharacter;
 			sourceTree = "<group>";
 		};
-		CC5BC9B22AED762100DAA585 /* UIExplore */ = {
+		CC5BC9B22AED762100DAA585 /* TouchGestureExploreExplore */ = {
 			isa = PBXGroup;
 			children = (
 				CC43524B2A725A06000EDAB0 /* ARCharacterSelectDelegate.swift */,
 			);
-			path = UIExplore;
+			path = TouchGestureExploreExplore;
 			sourceTree = "<group>";
 		};
 		CC5BC9B32AED764000DAA585 /* ARKiosk */ = {
@@ -431,7 +434,7 @@
 				CC38F8AD2A877570008A9C22 /* PhoneNumberMembershipDelegate.swift */,
 				CC4AA4A72A88F228005C3201 /* ARKioskDelegate.swift */,
 				CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */,
-				CCFE1C9C2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift */,
+				CCFE1C9C2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift */,
 				FF502C2E2A8007D600F1CBB2 /* MenuSelectionTableViewCellDelegate.swift */,
 			);
 			path = ARKiosk;
@@ -491,7 +494,7 @@
 			children = (
 				CC57ABFF2A710ABF00E892FF /* Home */,
 				CC47C8BA2A836F5D00B257AF /* Intro */,
-				CC57AC0A2A710C4E00E892FF /* UIExplore */,
+				CC57AC0A2A710C4E00E892FF /* TouchGestureExplore */,
 				FF185B322A739BF9003E766E /* ARKiosk */,
 				AD9F67D72A824D5B0056696E /* AIExplore */,
 			);
@@ -670,7 +673,7 @@
 				CC4AA4AA2A88F6C7005C3201 /* ARKioskForBarcode.scn in Resources */,
 				CC57ABF92A710A4300E892FF /* LaunchScreen.storyboard in Resources */,
 				CC2AA4E62AB2D8280080F717 /* KioskModal.storyboard in Resources */,
-				CCCA56442AB2D964006D684B /* UIExplore.storyboard in Resources */,
+				CCCA56442AB2D964006D684B /* TouchGestureExplore.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,10 +685,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4352512A72841E000EDAB0 /* Navigator.swift in Sources */,
+				CCF1D2852AFC6D6A0096A989 /* ActionProtocol.swift in Sources */,
 				CCA5E4772AED5D0B007CDB8C /* Kiosk.swift in Sources */,
 				CC4352472A72506C000EDAB0 /* ARCharacterSelectViewController.swift in Sources */,
 				CC57AC182A710DD100E892FF /* Arr.swift in Sources */,
-				CC57AC132A710D9C00E892FF /* UIExploreModel.swift in Sources */,
+				CC57AC132A710D9C00E892FF /* TouchGestureExploreModel.swift in Sources */,
 				CC47C8C52A83768200B257AF /* HomeDelegate.swift in Sources */,
 				FF185B522A73B589003E766E /* KioskMainBoardViewController.swift in Sources */,
 				CC43524C2A725A06000EDAB0 /* ARCharacterSelectDelegate.swift in Sources */,
@@ -693,14 +697,14 @@
 				FFE42A662A73BC5400752CD7 /* PaymentSelectViewController.swift in Sources */,
 				FFE1D1662A7B733A00E4E049 /* MenuSelectionViewController.swift in Sources */,
 				CC57ABED2A710A4200E892FF /* AppDelegate.swift in Sources */,
-				CC57AC0F2A710D2A00E892FF /* UIExploreViewController.swift in Sources */,
+				CC57AC0F2A710D2A00E892FF /* TouchGestureExploreViewController.swift in Sources */,
 				AD9F67F32A824F540056696E /* NewsPaperTextRecognizer.swift in Sources */,
 				CCB7B4372A7782FA00EE46AA /* PaymentFinishViewController.swift in Sources */,
 				CCE801A42A8A05E000FE0994 /* GestureRecognizerForKiosk.swift in Sources */,
 				CC291D6E2A77FEAF00C363DF /* PaymentSelectModel.swift in Sources */,
 				CCE801A22A89FD8600FE0994 /* ARKioskModel.swift in Sources */,
 				CCFE1C9B2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift in Sources */,
-				CCFE1C9D2A7BC2E20096CDE8 /* KioskMainBoardDelegate.swift in Sources */,
+				CCFE1C9D2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift in Sources */,
 				AD9F67F22A824F540056696E /* TTSManager.swift in Sources */,
 				CCB04B302A7A31060035483C /* UIColor+Extension.swift in Sources */,
 				CC57AC162A710DC900E892FF /* ARCharacter.swift in Sources */,

@@ -27,7 +27,7 @@ class ProductOptionSelectViewController: UIViewController {
     @IBOutlet private weak var extraIceBtnView: UIView!
     
     private let resource: ProductOptionResource = ProductOptionResource()
-    weak var kioskMenuBoardDelegate: KioskMainBoardDelegate?
+    weak var kioskMenuBoardDelegate: MenuSelectionDelegate?
     private var selectedSizeBtnView: UIView!
     private var selectedIceBtnView: UIView!
 

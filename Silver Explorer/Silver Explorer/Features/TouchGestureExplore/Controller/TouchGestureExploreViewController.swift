@@ -1,5 +1,5 @@
 //
-//  UIExploreViewController.swift
+//  TouchGestureExploreViewController.swift
 //  Silver Explorer
 //
 //  Created by Jinyoung Yoo on 2023/07/26.
@@ -9,7 +9,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class UIExploreViewController: UIViewController, ARSCNViewDelegate {
+class TouchGestureExploreViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet private var sceneView: ARSCNView!
     
@@ -55,7 +55,7 @@ class UIExploreViewController: UIViewController, ARSCNViewDelegate {
 
 }
 
-extension UIExploreViewController {
+extension TouchGestureExploreViewController {
     
     // MARK: - viewDidLoad 로직 모듈화 메서드
     
@@ -109,7 +109,7 @@ extension UIExploreViewController {
         } else {
             resetARCharacter()
             changeStage(isNext: true)
-            stageTitleLabel.text = UIExploreModel.stageTitles[stage.rawValue]
+            stageTitleLabel.text = TouchGestureExploreModel.stageTitles[stage.rawValue]
         }
     }
 
@@ -119,7 +119,7 @@ extension UIExploreViewController {
         } else {
             resetARCharacter()
             changeStage(isNext: false)
-            stageTitleLabel.text = UIExploreModel.stageTitles[stage.rawValue]
+            stageTitleLabel.text = TouchGestureExploreModel.stageTitles[stage.rawValue]
         }
     }
     
@@ -152,8 +152,8 @@ extension UIExploreViewController {
         Stage.changeStage(&stage, isNext)
         addNewGestureRecognizer(stage, arCharacter)
 
-        stageImageView.image = UIExploreModel.stageImages[self.stage]
-        stageDescriptionLabel.text = UIExploreModel.stageDescriptions[self.stage]
+        stageImageView.image = TouchGestureExploreModel.stageImages[self.stage]
+        stageDescriptionLabel.text = TouchGestureExploreModel.stageDescriptions[self.stage]
         stageDescriptionView.isHidden = false
     }
     
