@@ -7,28 +7,25 @@
 
 import Foundation
 
-protocol KioskMainBoardDelegate: AnyObject {
-    // KioskMainBoardViewController -> ProductOptionSelectViewController
+protocol MenuSelectionDelegate: AnyObject {
+    // MenuSelectionViewController -> ProductOptionSelectViewController
     func productForSelectingOption() -> Product
     
-    // ProductOptionSelectViewController -> KioskMainBoardViewController
+    // ProductOptionSelectViewController -> MenuSelectionViewController
     func productForCart(product: Product)
     
-    // KioskMainBoardViewController -> PaymentSelectViewController
+    // MenuSelectionViewController -> PaymentSelectViewController
     func totalPriceForPayment() -> Int
     
-    // PaymentFinishViewController -> KioskMainBoardViewController
+    // PaymentFinishViewController -> MenuSelectionViewController
     func backToMainScreen()
     
-    // MembershipViewController -> KioskMainBoardViewController
-    // payment를 불러오는 코드만 작성하면됨
+    // MembershipViewController -> MenuSelectionViewController
     func didMembershipVCFinish()
     
     func moveToPaymentSelectVC()
-
     
     func moveToPaymentVC(paymentType : PaymentType)
     
     func moveToPaymentFinishVC()
-    
 }

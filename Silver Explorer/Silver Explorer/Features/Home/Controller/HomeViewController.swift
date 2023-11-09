@@ -15,8 +15,8 @@ class HomeViewController: UIViewController, HomeDelegate {
         super.viewDidLoad()
     }
 
-    @IBAction func uiExploreBtnPressed(_ sender: UIButton) {
-        selectedContent = .UIExplore
+    @IBAction func touchGestureExploreBtnPressed(_ sender: UIButton) {
+        selectedContent = .TouchGestureExplore
         Navigator.moveToContentIntroductionVC(homeVC: self)
     }
 

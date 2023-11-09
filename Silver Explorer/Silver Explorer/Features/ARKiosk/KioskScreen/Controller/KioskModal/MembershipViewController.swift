@@ -17,7 +17,7 @@ class MembershipViewController: UIViewController, ARKioskDelegate, AlertDelegate
     @IBOutlet private weak var arExperienceButton: UIButton!
     @IBOutlet private weak var membershipButton: UIButton!
     
-    weak var kioskMainBoardDelegate: KioskMainBoardDelegate?
+    weak var menuSelectionDelegate: MenuSelectionDelegate?
     weak var phoneNumberDelegate: PhoneNumberMembershipDelegate?
 
 
@@ -43,7 +43,7 @@ extension MembershipViewController {
     
     @IBAction private func noMembershipBtnPressed(_ sender: UIButton) {
         self.dismiss(animated: false) {
-            self.kioskMainBoardDelegate?.didMembershipVCFinish()
+            self.menuSelectionDelegate?.didMembershipVCFinish()
         }
     }
     
@@ -110,7 +110,7 @@ extension MembershipViewController {
     
     func didAlertDismiss() {
         self.dismiss(animated: false) {
-            self.kioskMainBoardDelegate?.didMembershipVCFinish()
+            self.menuSelectionDelegate?.didMembershipVCFinish()
         }
     }
     

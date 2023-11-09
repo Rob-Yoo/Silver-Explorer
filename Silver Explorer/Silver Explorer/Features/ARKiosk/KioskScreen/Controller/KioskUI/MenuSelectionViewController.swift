@@ -57,7 +57,7 @@ class MenuSelectionViewController : UIViewController, UITableViewDelegate,UIColl
         if !cartItems.isEmpty{
             let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "MembershipViewController") as! MembershipViewController
-            vc.kioskMainBoardDelegate = self
+            vc.menuSelectionDelegate = self
             vc.appear(sender: self)
         }
     }
@@ -111,7 +111,7 @@ class MenuSelectionViewController : UIViewController, UITableViewDelegate,UIColl
             cell.configure(item)
             return cell
         })
-        updateDataSource()  //
+        updateDataSource()
         collectionView.collectionViewLayout = itemLayout()
         menuSelectionTableView.delegate = self
         menuSelectionTableView.dataSource = self
@@ -148,21 +148,21 @@ class MenuSelectionViewController : UIViewController, UITableViewDelegate,UIColl
     
 }
 
-extension MenuSelectionViewController : KioskMainBoardDelegate {
+extension MenuSelectionViewController : MenuSelectionDelegate {
 
     func moveToPaymentFinishVC()
     {
         let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "PaymentFinishViewController") as! PaymentFinishViewController
-        vc.kioskMainBoardDelegate = self
+        let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PaymentFinishViewController.self)) as! PaymentFinishViewController
+        vc.menuSelectionDelegate = self
         vc.appear(sender: self)
         
     }
     func moveToPaymentVC(paymentType: PaymentType) {
         let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PaymentViewController.self)) as! PaymentViewController
         vc.paymentType = paymentType
-        vc.kioskMainBoardDelegate = self
+        vc.menuSelectionDelegate = self
         vc.appear(sender: self)
     }
 
@@ -184,7 +184,7 @@ extension MenuSelectionViewController : KioskMainBoardDelegate {
     func moveToPaymentSelectVC() {
         let storyboard = UIStoryboard(name: Path.KioskModal.rawValue, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PaymentSelectViewController.self)) as! PaymentSelectViewController
-        vc.kioskMainBoardDelegate = self
+        vc.menuSelectionDelegate = self
         vc.appear(sender: self)
     }
     
@@ -199,6 +199,7 @@ extension MenuSelectionViewController : KioskMainBoardDelegate {
         }
     }
 }
+
 extension MenuSelectionViewController : MenuSelectionTableViewCellDelegate {
     func didIncreaseQuantity(cell: MenuSelectionTableViewCell) {
         guard let indexPath = menuSelectionTableView.indexPath(for: cell) else { return }
@@ -212,9 +213,6 @@ extension MenuSelectionViewController : MenuSelectionTableViewCellDelegate {
         else {
             showCustomAlert(description: "수량은")
         }
-//               product.numberOfProduct = min(product.numberOfProduct + 1, 5)  // 최대 5개
-//               cartItems[indexPath.row] = product
-//               cell.configure(product)  // 셀 업데이트
     }
 
     func didDecreaseQuantity(cell: MenuSelectionTableViewCell) {

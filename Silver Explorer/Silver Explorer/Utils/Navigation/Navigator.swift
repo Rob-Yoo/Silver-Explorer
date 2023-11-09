@@ -26,8 +26,8 @@ struct Navigator {
         var contentVC: UIViewController!
         
         switch content {
-        case .UIExplore:
-            let storyboard = UIStoryboard(name: Path.UIExplore.rawValue, bundle: nil)
+        case .TouchGestureExplore:
+            let storyboard = UIStoryboard(name: Path.TouchGestureExplore.rawValue, bundle: nil)
             contentVC = storyboard.instantiateViewController(withIdentifier: String(describing: ARCharacterSelectViewController.self))
         case .ARKiosk:
             let storyboard = UIStoryboard(name: Path.KioskMainBoard.rawValue, bundle: nil)
@@ -42,9 +42,9 @@ struct Navigator {
         vc.navigationController?.pushViewController(contentVC, animated: true)
     }
     
-    static func moveToUIExploreVC(vc: UIViewController) {
-        let storyboard = UIStoryboard(name: Path.UIExplore.rawValue, bundle: nil)
-        guard let nextVC = storyboard.instantiateViewController(withIdentifier: String(describing: UIExploreViewController.self)) as? UIExploreViewController else { return }
+    static func moveToTouchGestureExploreVC(vc: UIViewController) {
+        let storyboard = UIStoryboard(name: Path.TouchGestureExplore.rawValue, bundle: nil)
+        guard let nextVC = storyboard.instantiateViewController(withIdentifier: String(describing: TouchGestureExploreViewController.self)) as? TouchGestureExploreViewController else { return }
         
         nextVC.arCharacterDelegate = vc as! ARCharacterSelectViewController
         vc.navigationController?.pushViewController(nextVC, animated: true)
