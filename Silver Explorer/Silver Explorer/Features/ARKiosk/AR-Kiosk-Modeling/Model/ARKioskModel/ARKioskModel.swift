@@ -10,7 +10,7 @@ import SceneKit
 
 // MARK: - ARKiosk Class
 
-class ARKioskModel {
+class ARKioskModel: ActionProtocol {
     var sceneView: ARSCNView!
     var kioskContainerNode: SCNNode
     var kioskNode: SCNNode
@@ -22,6 +22,10 @@ class ARKioskModel {
 
     final func setSceneView(sceneView: ARSCNView) { self.sceneView = sceneView }
 
-    @objc func rightAngleRotate(_ gesture: UISwipeGestureRecognizer) {}
-    @objc func scaleUpAndDown(_ gesture: UIPinchGestureRecognizer) {}
+    @objc func rightAngleRotate(_ gesture: UISwipeGestureRecognizer) {
+        fatalError("ARKioskModel의 rightAngleRotate 메서드는 무조건 오버라이드!!")
+    }
+    @objc func scaleUpAndDown(_ gesture: UIPinchGestureRecognizer) {
+        fatalError("ARKioskModel의 scaleUpAndDown 메서드는 무조건 오버라이드!!")
+    }
 }

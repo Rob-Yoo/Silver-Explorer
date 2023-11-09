@@ -66,7 +66,7 @@
 		CCE801A82A8A0AA800FE0994 /* ARKioskForCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */; };
 		CCF1D2852AFC6D6A0096A989 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */; };
 		CCFE1C9B2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */; };
-		CCFE1C9D2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9C2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift */; };
+		CCFE1C9D2A7BC2E20096CDE8 /* ModalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE1C9C2A7BC2E20096CDE8 /* ModalDelegate.swift */; };
 		FF185B442A73AD7B003E766E /* ARKiosk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF185B432A73AD7B003E766E /* ARKiosk.storyboard */; };
 		FF185B462A73ADA7003E766E /* ARKioskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF185B452A73ADA7003E766E /* ARKioskViewController.swift */; };
 		FF185B4C2A73B4AC003E766E /* summerFestival.png in Resources */ = {isa = PBXBuildFile; fileRef = FF185B4B2A73B4AC003E766E /* summerFestival.png */; };
@@ -142,7 +142,7 @@
 		CCE801A62A8A09E500FE0994 /* ARKioskForCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskForCreditCard.swift; sourceTree = "<group>"; };
 		CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
 		CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPaymentTypeDelegate.swift; sourceTree = "<group>"; };
-		CCFE1C9C2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectionDelegate.swift; sourceTree = "<group>"; };
+		CCFE1C9C2A7BC2E20096CDE8 /* ModalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDelegate.swift; sourceTree = "<group>"; };
 		CCFEDDB32A8BF5A200DDA460 /* Silver Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Silver Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF185B432A73AD7B003E766E /* ARKiosk.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARKiosk.storyboard; sourceTree = "<group>"; };
 		FF185B452A73ADA7003E766E /* ARKioskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKioskViewController.swift; sourceTree = "<group>"; };
@@ -258,20 +258,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CC43524A2A7259D0000EDAB0 /* Delegate */ = {
+		CC43524A2A7259D0000EDAB0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */,
 				CC5BC9B42AED766000DAA585 /* Home */,
 				CC5BC9B32AED764000DAA585 /* ARKiosk */,
 				CC5BC9B22AED762100DAA585 /* TouchGestureExploreExplore */,
 			);
-			path = Delegate;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		CC43524D2A727287000EDAB0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				CC43524A2A7259D0000EDAB0 /* Delegate */,
+				CC43524A2A7259D0000EDAB0 /* Protocols */,
 				CC490F752AED6B3000063816 /* Extension */,
 				CCA5E47B2AED6872007CDB8C /* Navigation */,
 				CC43524E2A727296000EDAB0 /* CustomizeView.swift */,
@@ -410,7 +411,6 @@
 		CC57AC142A710DB600E892FF /* ARCharacter */ = {
 			isa = PBXGroup;
 			children = (
-				CCF1D2842AFC6D6A0096A989 /* ActionProtocol.swift */,
 				CC57AC152A710DC900E892FF /* ARCharacter.swift */,
 				CC57AC172A710DD100E892FF /* Arr.swift */,
 				CC57AC192A710DDA00E892FF /* Finn.swift */,
@@ -434,7 +434,7 @@
 				CC38F8AD2A877570008A9C22 /* PhoneNumberMembershipDelegate.swift */,
 				CC4AA4A72A88F228005C3201 /* ARKioskDelegate.swift */,
 				CCFE1C9A2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift */,
-				CCFE1C9C2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift */,
+				CCFE1C9C2A7BC2E20096CDE8 /* ModalDelegate.swift */,
 				FF502C2E2A8007D600F1CBB2 /* MenuSelectionTableViewCellDelegate.swift */,
 			);
 			path = ARKiosk;
@@ -704,7 +704,7 @@
 				CC291D6E2A77FEAF00C363DF /* PaymentSelectModel.swift in Sources */,
 				CCE801A22A89FD8600FE0994 /* ARKioskModel.swift in Sources */,
 				CCFE1C9B2A7B993F0096CDE8 /* SelectedPaymentTypeDelegate.swift in Sources */,
-				CCFE1C9D2A7BC2E20096CDE8 /* MenuSelectionDelegate.swift in Sources */,
+				CCFE1C9D2A7BC2E20096CDE8 /* ModalDelegate.swift in Sources */,
 				AD9F67F22A824F540056696E /* TTSManager.swift in Sources */,
 				CCB04B302A7A31060035483C /* UIColor+Extension.swift in Sources */,
 				CC57AC162A710DC900E892FF /* ARCharacter.swift in Sources */,
