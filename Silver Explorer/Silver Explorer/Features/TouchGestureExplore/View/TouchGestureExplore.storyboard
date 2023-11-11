@@ -510,11 +510,7 @@ AR 캐릭터를 짧게 탭해보세요!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZL-bO-Elg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="IBF-RO-Sa5">
-                    <connections>
-                        <action selector="stageDescriptionViewTouched:" destination="42N-w5-HAg" id="IxW-x8-NMp"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="IBF-RO-Sa5"/>
                 <tapGestureRecognizer id="bE1-qv-bLb">
                     <connections>
                         <action selector="informationViewTouched:" destination="42N-w5-HAg" id="vWj-RU-tK8"/>
