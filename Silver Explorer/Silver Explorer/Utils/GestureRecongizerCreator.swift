@@ -7,9 +7,9 @@
 
 import UIKit
 
-struct GestureRecongizerForCharcater {
+struct GestureRecongizerCreator {
     
-    static func createGestureRecognizer(target arCharacter: ARCharacter, _ stage: Stage.StageType) -> [UIGestureRecognizer] {
+    static func applyToARCharacter(target arCharacter: ARCharacter, _ stage: Stage.StageType) -> [UIGestureRecognizer] {
         switch stage {
         case .shortTap:
             let tapGesture = UITapGestureRecognizer(target: arCharacter, action: #selector(arCharacter.jump))
@@ -45,6 +45,18 @@ struct GestureRecongizerForCharcater {
             let rotationGesture = UIRotationGestureRecognizer(target: arCharacter, action: #selector(arCharacter.zAxisRotate))
             return [rotationGesture]
         }
+    }
+    
+    static func applyToARKiosk(target arKiosk: ARKioskModel) -> [UIGestureRecognizer] {
+        
+        let leftSwipeGesture = UISwipeGestureRecognizer(target: arKiosk, action: #selector(arKiosk.rightAngleRotate))
+        let rightSwipeGesture = UISwipeGestureRecognizer(target: arKiosk, action: #selector(arKiosk.rightAngleRotate))
+        let pinchGesture = UIPinchGestureRecognizer(target: arKiosk, action: #selector(arKiosk.scaleUpAndDown))
+        
+        leftSwipeGesture.direction = .left
+        rightSwipeGesture.direction = .right
+        
+        return [pinchGesture, leftSwipeGesture, rightSwipeGesture]
     }
 }
 

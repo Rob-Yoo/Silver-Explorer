@@ -83,7 +83,7 @@ extension ARKioskViewController {
     }
     
     func addGestureRecognizer() {
-        let gestureRecongnizers = GestureRecognizerForKiosk.createSwipeAndPinchGestureRecognizer(arKiosk)
+        let gestureRecongnizers = GestureRecongizerCreator.applyToARKiosk(target: arKiosk)
         
         gestureRecongnizers.forEach { sceneView.addGestureRecognizer($0) }
     }
