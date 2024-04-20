@@ -256,6 +256,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CC21F3082BD3E67E00B0661A /* ExploreStage */ = {
+			isa = PBXGroup;
+			children = (
+				CCA5E4742AED5CA7007CDB8C /* Stage.swift */,
+				CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerCreator.swift */,
+			);
+			path = ExploreStage;
+			sourceTree = "<group>";
+		};
 		CC43524A2A7259D0000EDAB0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +283,6 @@
 				CC490F752AED6B3000063816 /* Extension */,
 				CCA5E47B2AED6872007CDB8C /* Navigation */,
 				CC43524E2A727296000EDAB0 /* CustomizeView.swift */,
-				CCA5E4702AEC3E8A007CDB8C /* GestureRecongizerCreator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -399,9 +407,9 @@
 		CC57AC0D2A710C7F00E892FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC21F3082BD3E67E00B0661A /* ExploreStage */,
 				CC57AC142A710DB600E892FF /* ARCharacter */,
 				CC57AC122A710D9C00E892FF /* TouchGestureExploreModel.swift */,
-				CCA5E4742AED5CA7007CDB8C /* Stage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
